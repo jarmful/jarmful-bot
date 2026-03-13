@@ -49,7 +49,7 @@ def chat_with_claude(chat_id, user_message):
     history = conversation_history[chat_id][-20:]
     
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-4-5",
         max_tokens=4000,
         system=SYSTEM_PROMPT,
         messages=history
